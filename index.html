@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Punto 1</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <style>
+        .form-group{
+            padding: 3em;
+          
+        }
+        .espacio{
+            padding-left: 1em;
+            color: red;
+        }
+
+        div.botones{
+            padding-left: 22em;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Operaciones Matematicas</h1>
+          <p class="lead">Esta calculadora fue realizada con el lenguaje de programacion PHP.</p>
+        </div>
+      </div>
+
+    <form name="formulario" action="operaciones.php" method="POST">
+        <div class="form-group">
+        <label><h3 class="espacio1"> Ingrese el primer numero</h3><input id="num1" name="num1" class="form-control form-control-lg" type="number"></label>
+        <label><h3 class="espacio1">Ingrese el segundo numero</h3><input id="num2" name="num2" class="form-control form-control-lg" type="number"></label>
+        <label><h3 class="espacio">Resultado</h3><input id="resultado" name="resultado" class="form-control form-control-lg" type="number"> </label>
+        
+
+    </div>
+
+    <div class="botones">
+    <button class="btn btn-primary" type="submit" name="clic" value="suma">Sumar</button>
+    <button class="btn btn-info" type="submit" name="clic" value="resta">Restar</button>
+    <button class="btn btn-warning" type="submit" name="clic" value="multiplicacion">Multiplicar</button>
+    <button class="btn btn-success" type="submit" name="clic" value="dividision">Dividir</button>
+    </div>   
+    </form>
+    
+</body>
+</html>
