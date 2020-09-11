@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercer Ejercicio</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+    .form-group{
+        padding: 5em;
+    }
+    .esp{
+        padding-left: 5em;
+      
+    }
+</style>
+
+</head>
+<body>
+    
+    <form action="springStep.php" method="POST">
+
+        <div class="form-group">
+            <h1 class="jumbotron">Almacen Spring Step</h1>
+            <label class="esp" >Digite la cantidad de Zapatos</label> <input type="text" name='cantidad_zap' id='cantidad_zapt'><br>
+            <label class="esp"> El descuento es de : $ </label><input type="text" readonly name="descuento" id="descuento"><br>
+            <label class="esp"> <b> El valor total de los Zapatos es: $ </b></label><input type="text" readonly name="valor_total" id="valor_total">
+            <input type="submit" value="Calcular">
+        </div>
+    </form>
+
+
+
+
+</body>
+</html>
