@@ -17,9 +17,9 @@
                     return $resultado;
                     break;
             case "division" :
-                    $resultado=($num1/$num2);
-                    return $resultado;
-                    break;
+                $resultado=($num1 / $num2);
+                return $resultado;
+                break;
         }
      
     }
