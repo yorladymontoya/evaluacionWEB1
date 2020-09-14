@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <h1 class="jumbotron">Nomina empleado Postobon</h1>
+
+    <form action="nomina4.php" method="POST">
+
+        <div class="form-group">
+            <label> Nombre empleado: </label> <input type="text" name="nombre" class="form-control form-control-sm">
+<label> Cantiad de horas laboradas en la semana:</label> <input type="number" name="num_horas" class="form-control form-control-sm">
+<label>Nomina a pagar: $</label> <input type="number" name="val_total" readonly class="form-control form-control-lg">
+<input type="submit" value="Calcular">
+        </div>
+
+
+
+    </form>
+    
+</body>
+</html>
